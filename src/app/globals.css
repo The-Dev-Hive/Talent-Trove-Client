@@ -76,3 +76,25 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  /*  Form styling */
+
+  .inputCombo-field {
+    @apply block w-full items-center rounded-lg border bg-white px-10 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300 2xl:py-4 2xl:pr-5 2xl:text-xl 2xl:placeholder:text-xl;
+  }
+  .inputCombo-wrapper {
+    @apply relative flex items-center 2xl:shadow-sm 2xl:placeholder:text-2xl;
+  }
+  .inputCombo-label {
+    @apply block font-bold capitalize text-gray-700;
+  }
+
+  .inputCombo-error {
+    @apply mt-[0.15rem] text-xs font-semibold text-red-400;
+  }
+
+  .inputCombo-warning {
+    @apply text-sm font-bold italic text-red-500;
+  }
+}
