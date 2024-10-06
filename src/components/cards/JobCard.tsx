@@ -115,9 +115,9 @@ export const JobCard  = ({...props}:Props) => {
             
                 <div className="w-10 h-10 bg-gray-200 rounded-full flex justify-center items-center">
                   {job.img ? (
-                    <Image src={job.img} alt={job.title} className="w-full h-full object-cover rounded-full" />
+                    <Image src={job.img} alt={job.title}   className="w-full h-full object-cover rounded-full" />
                   ) : (
-                    <div className="w-full h-full bg-gray-400 rounded-full"></div> // Placeholder for no image
+                    <div className="w-full h-full bg-gray-400 rounded-full"></div>  
                   )}
                 </div>
                 <div>
