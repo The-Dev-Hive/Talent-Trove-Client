@@ -1,3 +1,1 @@
-npm run lint
-npm run formate
 npm run lint-staged --concurrent false
