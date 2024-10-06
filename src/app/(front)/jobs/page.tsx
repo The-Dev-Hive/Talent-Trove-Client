@@ -1,6 +1,6 @@
 // reference :  https://preview.cruip.com/job-board/
 
-import React from "react";
+import React from 'react';
 
 const JobPage = () => {
   return <div>JobPage</div>;

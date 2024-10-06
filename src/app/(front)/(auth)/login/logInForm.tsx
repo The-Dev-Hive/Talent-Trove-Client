@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
-import { useForm } from "react-hook-form";
+import { useForm } from 'react-hook-form';
 
-import { Button } from "@/components/ui";
-import { Icons } from "@/components/icons";
-import { loginSchema, LoginSchemaType } from "./login.yup-schema";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { InputCombo, InputComboForPassword } from "@/components/forms";
-import { Fragment } from "react";
+import { Button } from '@/components/ui';
+import { Icons } from '@/components/icons';
+import { loginSchema, LoginSchemaType } from './login.yup-schema';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { InputCombo, InputComboForPassword } from '@/components/forms';
+import { Fragment } from 'react';
 
 export default function LoginForm() {
   const {
@@ -42,14 +42,14 @@ export default function LoginForm() {
               <div>
                 <div className="space-y-2">
                   <InputCombo
-                    register={register("email")}
+                    register={register('email')}
                     error={errors.email?.message}
                     labelName="Email"
                     placeholder="name@example.com"
                     type="email"
                   />
                   <InputComboForPassword
-                    register={register("password")}
+                    register={register('password')}
                     error={errors.password?.message}
                     labelName="password"
                     placeholder="*****"
@@ -78,14 +78,14 @@ export default function LoginForm() {
             </div>
           </form>
           <p className="px-8 text-center text-sm text-muted-foreground">
-            By clicking continue, you agree to our{" "}
+            By clicking continue, you agree to our{' '}
             <Link
               href="/terms"
               className="underline underline-offset-4 hover:text-primary"
             >
               Terms of Service
-            </Link>{" "}
-            and{" "}
+            </Link>{' '}
+            and{' '}
             <Link
               href="/privacy"
               className="underline underline-offset-4 hover:text-primary"

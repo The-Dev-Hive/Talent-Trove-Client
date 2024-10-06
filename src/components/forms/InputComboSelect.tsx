@@ -4,9 +4,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { SelectProps } from "@radix-ui/react-select";
-import { UseFormRegisterReturn } from "react-hook-form";
+} from '@/components/ui/select';
+import { SelectProps } from '@radix-ui/react-select';
+import { UseFormRegisterReturn } from 'react-hook-form';
 
 interface Props extends SelectProps {
   name: string;
@@ -48,7 +48,7 @@ export const InputComboSelect = ({
         </SelectContent>
       </Select>
 
-      {isShowError && <p className="inputCombo-error">{error || ""}</p>}
+      {isShowError && <p className="inputCombo-error">{error || ''}</p>}
     </div>
   );
 };

@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "formate": "prettier --write /src --ignore-path .gitignore",
+    "formate": "prettier --write ./src --ignore-path .gitignore",
     "lint-staged": "lint-staged"
   },
   "dependencies": {

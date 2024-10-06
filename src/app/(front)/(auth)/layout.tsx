@@ -1,10 +1,10 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
-type Props = React.ComponentPropsWithoutRef<"div">;
+type Props = React.ComponentPropsWithoutRef<'div'>;
 
 export const metadata: Metadata = {
-  title: "Authentication",
-  description: "Authentication forms built using the components.",
+  title: 'Authentication',
+  description: 'Authentication forms built using the components.',
 };
 
 export default function AuthenticationPage({ children }: Props) {
