@@ -9,7 +9,7 @@ interface Props extends React.ComponentProps<"div"> {}
 export const JobCard = ({ ...props }: Props) => {
   return (
     <div {...props}>
-      <div className="mx-auto max-w-screen-xl">
+      <div className="  mx-auto max-w-screen-xl">
         <div className="p-10 text-center">
           <h1 className="text-3xl font-bold">Featured Jobs</h1>
           <p className="text-gray-600">
@@ -21,7 +21,7 @@ export const JobCard = ({ ...props }: Props) => {
           {jobs.map((job, index) => (
             <div
               key={index}
-              className="flex flex-col p-6 rounded-lg border border-gray-200 shadow-sm hover:bg-indigo-100 hover:shadow-lg transition-shadow duration-300"
+              className="flex flex-col p-6 rounded-lg border border-gray-200 shadow-sm hover:bg-indigo-100 hover:shadow-lg transition-shadow duration-300   "
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
@@ -39,7 +39,7 @@ export const JobCard = ({ ...props }: Props) => {
                     )}
                   </div>
                   <div>
-                    <h2 className="text-lg font-semibold">{job.title}</h2>
+                    <h2 className="lg:text-lg sm:text-sm ">{job.title}</h2>
                   </div>
                 </div>
                 <div className="text-gray-400 hover:text-gray-600 cursor-pointer">
@@ -55,13 +55,13 @@ export const JobCard = ({ ...props }: Props) => {
                   <FaMapMarkerAlt className="h-5 w-5 text-red-500" />
                   <span>{job.location}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <CiTimer className="h-5 w-5 text-green-500" />
-                  <span>{job.time}</span>
+                <div className="flex items-center    gap-2">
+                  <CiTimer className="h-5   hidden lg:block md:block   w-5 text-green-500" />
+                  <span className=" hidden lg:block md:block">{job.time}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <FaMoneyBill1Wave className="h-5 w-5 text-yellow-500" />
-                  <span className="font-semibold">{job.salary}</span>
+                <div className="flex items-center    gap-2">
+                  <FaMoneyBill1Wave className="h-5 w-5  hidden lg:block md:block text-yellow-500" />
+                  <span className="font-semibold  hidden lg:block md:block">{job.salary}</span>
                 </div>
               </div>
 
