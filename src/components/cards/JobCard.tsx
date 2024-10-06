@@ -1,10 +1,10 @@
-import { FaBookmark, FaMapMarkerAlt, FaShoppingBag } from "react-icons/fa";
-import { CiTimer } from "react-icons/ci";
-import { FaMoneyBill1Wave } from "react-icons/fa6";
-import Image from "next/image";
-import { jobs } from "@/data/temporary";
-import { cn } from "@/utils";
-interface Props extends React.ComponentProps<"div"> {}
+import { FaBookmark, FaMapMarkerAlt, FaShoppingBag } from 'react-icons/fa';
+import { CiTimer } from 'react-icons/ci';
+import { FaMoneyBill1Wave } from 'react-icons/fa6';
+import Image from 'next/image';
+import { jobs } from '@/data/temporary';
+import { cn } from '@/utils';
+interface Props extends React.ComponentProps<'div'> {}
 
 export const JobCard = ({ ...props }: Props) => {
   return (
@@ -69,11 +69,11 @@ export const JobCard = ({ ...props }: Props) => {
                 {job.tags.map((tag, idx) => (
                   <span
                     key={idx}
-                    className={cn("text-sm px-2 py-1 rounded-lg", {
-                      "bg-blue-100 text-blue-600": tag.type === "full-time",
-                      "bg-green-100 text-green-600": tag.type === "private",
-                      "bg-yellow-100 text-yellow-600":
-                        tag.type !== "full-time" && tag.type !== "private",
+                    className={cn('text-sm px-2 py-1 rounded-lg', {
+                      'bg-blue-100 text-blue-600': tag.type === 'full-time',
+                      'bg-green-100 text-green-600': tag.type === 'private',
+                      'bg-yellow-100 text-yellow-600':
+                        tag.type !== 'full-time' && tag.type !== 'private',
                     })}
                   >
                     {tag.label}
