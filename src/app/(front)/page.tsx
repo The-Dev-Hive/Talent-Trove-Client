@@ -1,5 +1,5 @@
-import Text from "@/components/Test/Text";
-import React from "react";
+import Text from '@/app/(front)/Test/Text';
+import React from 'react';
 
 const RootPage = () => {
   return (
