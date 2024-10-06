@@ -1,9 +1,12 @@
+import Text from "@/components/Test/Text";
 import React from "react";
 
 const RootPage = () => {
   return (
     <div>
-      <p>RootPage</p>
+      <p>
+        <Text />
+      </p>
     </div>
   );
 };

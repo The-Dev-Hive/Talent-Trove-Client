@@ -1,16 +1,13 @@
- 
-
- 
-import { JobCard } from "../cards/JobCard"
-import { JobCategoryCards } from "../cards/JobCategoryCards"
+import { JobCard } from '@/components/cards/JobCard';
+import { JobCategoryCards } from '@/components/cards/JobCategoryCards';
 
 const Text = () => {
   return (
     <div>
-    <JobCategoryCards/>
-       <JobCard/>
+      <JobCategoryCards />
+      <JobCard />
     </div>
-  )
-}
+  );
+};
 
-export default Text
+export default Text;
