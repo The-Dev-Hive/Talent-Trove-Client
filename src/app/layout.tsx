@@ -1,7 +1,6 @@
-// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar"; // Import Navbar
+import Navbar from "@/components/navbar/Navbar";
 import { Inter } from "next/font/google";
 
 export const inter = Inter({
@@ -9,7 +8,7 @@ export const inter = Inter({
   style: ["normal"],
   subsets: ["latin"],
 });
-// Export metadata
+
 export const metadata: Metadata = {
   title: "Talent Trove",
   description: "Modern talent management platform",

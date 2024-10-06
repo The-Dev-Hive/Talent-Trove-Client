@@ -1,11 +1,9 @@
-"use client";
-
 import { inter } from "@/app/layout";
 import Link from "next/link";
 
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
-import { useState } from "react";
+
 import { Button } from "../ui";
 
 const initialItems = [
@@ -49,7 +47,6 @@ const NavItems = () => {
 };
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
   return (
     <header className={`${inter.className}`}>
       <div className="container mx-auto  max-w-[1104px]  rounded-xl shadow-md px-5 py-4 mt-5 ">
