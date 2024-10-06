@@ -1,19 +1,30 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
+import Navbar from '@/components/navbar/Navbar';
+import { Inter } from 'next/font/google';
+
+export const inter = Inter({
+  weight: ['400', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
-  title: "Talent Trove",
-  description: "Modern  talent management platform",
+  title: 'Talent Trove',
+  description: 'Modern talent management platform',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>{children}</body>
+      <body className={`antialiased ${inter.className}`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
