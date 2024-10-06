@@ -1,12 +1,11 @@
-import Text from '@/app/(front)/Test/Text';
+import { TopJobCategoryList, FeatureJob } from '@/components/homepage';
 import React from 'react';
 
 const RootPage = () => {
   return (
-    <div>
-      <p>
-        <Text />
-      </p>
+    <div className="py-12">
+      <TopJobCategoryList />
+      <FeatureJob />
     </div>
   );
 };
