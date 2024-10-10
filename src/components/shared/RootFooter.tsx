@@ -1,6 +1,6 @@
 import { Twitter, Send } from 'lucide-react';
 
-function Footer() {
+export function RootFooter() {
   return (
     <footer className="bg-white border-t border-gray-200 py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 px-4">
@@ -39,5 +39,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
