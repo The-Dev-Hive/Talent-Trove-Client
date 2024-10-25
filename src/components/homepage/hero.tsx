@@ -1,5 +1,4 @@
 import NeonGlow from '@/components/homepage/NeonGlow';
-import MemberAvatars from '@/components/homepage/MembersWithAvatar';
 
 export function Hero() {
   return (
@@ -20,21 +19,7 @@ export function Hero() {
             Our landing page template works on all devices, so you only have to
             set it up once, and get beautiful results forever.
           </p>
-
-          <MemberAvatars />
         </div>
-      </div>
-
-      <div className="absolute bottom-4 left-0 right-0 text-center text-gray-500 text-sm">
-        © Waitlist - A more meaningful home for software. Built by{' '}
-        <a href="#" className="text-purple-400 hover:text-purple-300">
-          @pacovitello
-        </a>{' '}
-        &{' '}
-        <a href="#" className="text-purple-400 hover:text-purple-300">
-          @davidepacillo
-        </a>
-        .
       </div>
     </div>
   );
