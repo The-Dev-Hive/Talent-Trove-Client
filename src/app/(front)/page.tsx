@@ -1,6 +1,7 @@
 import { TopJobCategoryList, FeatureJob, Hero } from '@/components/homepage';
 import React from 'react';
 import WhyChooseUs from '@/components/homepage/WhyChooseUs';
+import Banner from '@/components/Footer/Banner';
 const RootPage = () => {
   return (
     <div className="py-12">
@@ -8,6 +9,7 @@ const RootPage = () => {
       <TopJobCategoryList />
       <FeatureJob />
       <WhyChooseUs />
+      <Banner />
     </div>
   );
 };
