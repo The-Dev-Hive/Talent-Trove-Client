@@ -1,7 +1,7 @@
 import { TopJobCategoryList, FeatureJob, Hero } from '@/components/homepage';
 import React from 'react';
 import WhyChooseUs from '@/components/homepage/WhyChooseUs';
-import Banner from '@/components/Footer/Banner';
+import Banner from '@/components/footer/Banner';
 const RootPage = () => {
   return (
     <div className="py-12">
