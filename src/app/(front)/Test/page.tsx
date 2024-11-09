@@ -1,10 +1,10 @@
 import { JobCard } from '@/components/cards/JobCard';
-import { JobCategoryCards } from '@/components/cards/JobCategoryCards';
+import { CategoryOfJob } from '@/components/cards/JobCategoryCards';
 
 const Text = () => {
   return (
     <div>
-      <JobCategoryCards />
+      <CategoryOfJob />
       <JobCard />
     </div>
   );

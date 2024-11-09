@@ -1,30 +1,21 @@
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 
-type Props = React.ComponentPropsWithoutRef<'div'>;
+import { LogoIcon } from '@/components/icons';
 
-export const metadata: Metadata = {
-  title: 'Authentication',
-  description: 'Authentication forms built using the components.',
-};
+interface Props extends React.ComponentPropsWithoutRef<'div'> {}
 
-export default function AuthenticationPage({ children }: Props) {
+// export const metadata: Metadata = {
+//   title: 'Authentication',
+//   description: 'Authentication forms built using the components.',
+// };
+
+function AuthenticationPage({ children }: Props) {
   return (
     <div className="container relative  p-4 lg:p-0 h-screen lg:max-h-screen lg:min-h-[95vh]  flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 ">
       <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex">
         <div className="absolute inset-0 bg-zinc-900" />
         <div className="relative z-20 flex items-center text-lg font-medium">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="mr-2 h-6 w-6"
-          >
-            <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
-          </svg>
+          <LogoIcon />
           Acme Inc
         </div>
 
@@ -44,3 +35,5 @@ export default function AuthenticationPage({ children }: Props) {
     </div>
   );
 }
+
+export default AuthenticationPage;

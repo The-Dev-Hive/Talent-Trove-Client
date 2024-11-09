@@ -11,7 +11,7 @@ export const JobCard = ({ ...props }: Props) => {
       <div className="flex flex-col p-6 rounded-lg border border-gray-200 shadow-sm hover:bg-indigo-100 hover:shadow-lg transition-shadow duration-300   ">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gray-200 rounded-full flex justify-center items-center">
+            <div className="w-18 h-12 lg:w-12 md:w-12 bg-gray-200 rounded-full flex justify-center items-center">
               <Image
                 src={'https://i.postimg.cc/0yx9LBwm/1-2.png'}
                 alt={''}
@@ -21,7 +21,7 @@ export const JobCard = ({ ...props }: Props) => {
               />
             </div>
             <div>
-              <h2 className="lg:text-lg sm:text-sm ">
+              <h2 className="lg:text-lg sm:text-sm   ">
                 Software Engineer (Android), Libraries
               </h2>
             </div>
@@ -59,8 +59,8 @@ export const JobCard = ({ ...props }: Props) => {
           ].map((tag, idx) => (
             <span
               key={idx}
-              className={cn('text-sm px-2 py-1 rounded-lg', {
-                'bg-blue-100 text-blue-600': tag.type === 'full-time',
+              className={cn('text-sm px-2  flex items-center py-1 rounded-lg', {
+                'bg-blue-200 text-blue-600': tag.type === 'full-time',
                 'bg-green-100 text-green-600': tag.type === 'private',
                 'bg-yellow-100 text-yellow-600':
                   tag.type !== 'full-time' && tag.type !== 'private',
