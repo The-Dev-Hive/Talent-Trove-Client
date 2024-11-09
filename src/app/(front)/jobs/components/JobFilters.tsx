@@ -18,8 +18,11 @@ export const JobFilters = ({ ...props }: Props) => {
 
         <div className="flex justify-between flex-row lg:flex-col mb-6">
           <div className="flex flex-col w-full">
-            <label className="inline-flex items-center">
-              <input type="checkbox" className="form-checkbox text-blue-600" />
+            <label className="inline-flex items-center ">
+              <input
+                type="checkbox"
+                className="form-checkbox h-4 w-4  text-blue-600 "
+              />
               <span className="ml-2 text-gray-700">Full-time</span>
             </label>
           </div>
@@ -27,7 +30,9 @@ export const JobFilters = ({ ...props }: Props) => {
           <div className="flex flex-col w-full">
             <h3 className="font-bold mb-2 lg:mt-6">Remote Only</h3>
             <div
-              className={`${isToggle ? 'bg-primary border-primary' : 'bg-[#f0f0f0] border-gray-200'} border relative p-1 rounded-full w-[55px] cursor-pointer transition-all h-[30px] duration-200`}
+              className={`${
+                isToggle ? 'bg-blue-500' : 'bg-gray-300'
+              } relative w-14 h-8 rounded-full transition-colors cursor-pointer p-1`}
               onClick={handleSwitchChange}
             >
               <div className="absolute inset-0 flex items-center justify-center">
@@ -46,11 +51,17 @@ export const JobFilters = ({ ...props }: Props) => {
           <div className="flex flex-col w-full">
             <h3 className="font-bold mb-4 lg:mt-6">Job Roles</h3>
             <label className="inline-flex items-center">
-              <input type="checkbox" className="form-checkbox text-blue-600" />
+              <input
+                type="checkbox"
+                className="form-checkbox h-4 w-4  text-blue-600"
+              />
               <span className="ml-2 text-gray-700">Developer</span>
             </label>
             <label className="inline-flex items-center">
-              <input type="checkbox" className="form-checkbox text-blue-600" />
+              <input
+                type="checkbox"
+                className="form-checkbox h-4 w-4  text-blue-600"
+              />
               <span className="ml-2 text-gray-700">Developer</span>
             </label>
           </div>
@@ -58,15 +69,24 @@ export const JobFilters = ({ ...props }: Props) => {
           <div className="flex flex-col w-full">
             <h3 className="font-bold mb-4 lg:mt-6">Salary Range</h3>
             <label className="inline-flex items-center">
-              <input type="checkbox" className="form-checkbox text-blue-600" />
+              <input
+                type="checkbox"
+                className="form-checkbox h-4 w-4  text-blue-600"
+              />
               <span className="ml-2 text-gray-700">$20K - $50K</span>
             </label>
             <label className="inline-flex items-center">
-              <input type="checkbox" className="form-checkbox text-blue-600" />
+              <input
+                type="checkbox"
+                className="form-checkbox h-4 w-4  text-blue-600"
+              />
               <span className="ml-2 text-gray-700">$20K - $50K</span>
             </label>
             <label className="inline-flex items-center">
-              <input type="checkbox" className="form-checkbox text-blue-600" />
+              <input
+                type="checkbox"
+                className="form-checkbox h-4 w-4  text-blue-600"
+              />
               <span className="ml-2 text-gray-700">$20K - $50K</span>
             </label>
           </div>

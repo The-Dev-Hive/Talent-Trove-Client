@@ -4,7 +4,7 @@ interface Props extends React.ComponentProps<'div'> {}
 
 export const JobSearch = ({ className, ...props }: Props) => {
   return (
-    <div className={cn('flex items-center max-w-lg ', className)} {...props}>
+    <div className={cn('flex items-center max-w-lg   ', className)} {...props}>
       <label htmlFor="voice-search" className="sr-only">
         Search
       </label>

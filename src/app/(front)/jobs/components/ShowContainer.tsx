@@ -9,7 +9,7 @@ interface Props extends React.ComponentProps<'div'> {}
 export const ShowJobs = ({ ...props }: Props) => {
   return (
     <div
-      className=" pt-16 pb-12 flex justify-between  flex-col-reverse mx-auto  max-w-7xl lg:flex-row"
+      className=" pt-16 pb-12 flex justify-between p-6 lg:p-0  flex-col-reverse mx-auto  max-w-7xl lg:flex-row"
       {...props}
     >
       <div className="w-full   ">

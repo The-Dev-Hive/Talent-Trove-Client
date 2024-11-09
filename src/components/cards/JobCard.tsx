@@ -11,7 +11,7 @@ export const JobCard = ({ ...props }: Props) => {
       <div className="flex flex-col p-6 rounded-lg border border-gray-200 shadow-sm hover:bg-indigo-100 hover:shadow-lg transition-shadow duration-300   ">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <div className="w-20 h-12 lg:w-12 md:w-12 bg-gray-200 rounded-full flex justify-center items-center">
+            <div className="w-18 h-12 lg:w-12 md:w-12 bg-gray-200 rounded-full flex justify-center items-center">
               <Image
                 src={'https://i.postimg.cc/0yx9LBwm/1-2.png'}
                 alt={''}
