@@ -4,7 +4,7 @@ import WhyChooseUs from '@/components/homepage/WhyChooseUs';
 import Banner from '@/components/footer/Banner';
 const RootPage = () => {
   return (
-    <div className="py-12">
+    <div className="">
       <Hero />
       <TopJobCategoryList />
       <FeatureJob />

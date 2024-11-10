@@ -2,7 +2,7 @@ import NeonGlow from '@/components/homepage/NeonGlow';
 
 export function Hero() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden">
+    <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden">
       <NeonGlow />
 
       <div className="relative pt-32 pb-20 px-4">
