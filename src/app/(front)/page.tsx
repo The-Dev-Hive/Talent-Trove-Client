@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import WhyChooseUs from '@/components/homepage/WhyChooseUs';
 import Banner from '@/components/footer/Banner';
 import { Container } from '@/components/shared';
+import HowWorks from '@/components/homepage/HowWorks';
 
 const RootPage = () => {
   return (
@@ -12,6 +13,7 @@ const RootPage = () => {
         <TopJobCategoryList />
         <FeatureJob />
         <WhyChooseUs />
+        <HowWorks />
         <Banner />
       </Container>
     </Fragment>

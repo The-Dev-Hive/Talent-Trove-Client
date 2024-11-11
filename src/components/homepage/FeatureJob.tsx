@@ -12,7 +12,7 @@ export const FeatureJob = ({ ...props }: Props) => {
         description="Know your worth and find the job that qualifies your life"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 px-12">
+      <div className="  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 px-12">
         <JobCard />
         <JobCard />
         <JobCard />
