@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HowWorksCard = () => {
+export const HowWorksCard = () => {
   return (
     <div className="flex flex-wrap justify-center">
       <div className="flex flex-col  border-t-4 border-gray-300 hover:border-indigo-600 p-4 m-2   transition duration-300 ease-in-out">
@@ -15,5 +15,3 @@ const HowWorksCard = () => {
     </div>
   );
 };
-
-export default HowWorksCard;

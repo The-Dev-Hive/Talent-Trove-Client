@@ -1,7 +1,7 @@
 import { Signal, User2Icon } from 'lucide-react';
-import HowWorksCard from '../cards/HowWorksCard';
+import { HowWorksCard } from '../cards';
 
-const HowWorks = () => {
+export const HowWorks = () => {
   return (
     <div className=" mx-auto max-w-7xl">
       <div className="text-center py-16 bg-white">
@@ -72,5 +72,3 @@ const HowWorks = () => {
     </div>
   );
 };
-
-export default HowWorks;
