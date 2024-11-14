@@ -2,7 +2,10 @@ import { HeroUser } from './HeroUser';
 
 export const Hero = () => {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8 md:py-12    ">
+    <div
+      className="mx-auto max-w-6xl   
+     px-4 py-8 md:py-12    "
+    >
       <div className=" w-full md:w-4/5 lg:w-5/6 p-4 text-center md:text-left">
         <h1 className="text-4xl  sm:text-7xl md:text-7xl font-bold">
           Join the best tech startups in the{' '}

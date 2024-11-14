@@ -2,14 +2,14 @@ import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-600 py-8">
+    <footer className="bg-white   text-gray-600 py-8 mt-8">
       <div className="  mx-auto   max-w-7xl px-6 md:px-12 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center space-x-2 mb-4">
             <div className="bg-blue-500 p-2 rounded-full">
-              <span className="text-white font-bold text-lg">H</span>
+              <span className="text-white font-bold text-lg">T</span>
             </div>
-            <h2 className="text-lg font-bold">Hirace</h2>
+            <h2 className="text-lg font-bold">Talent Trove</h2>
           </div>
           <p className="text-sm">
             Find job you love and research the fastest-growing companies.
@@ -45,9 +45,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t  mt-8 pt-4">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p className="text-gray-500">©2023 Hirace Technologies, Inc.</p>
+      <div className="border-t   border-indigo-300 mt-8   mx-auto   max-w-7xl ">
+        <div className="container pt-2 mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row justify-between items-center text-sm">
+          <p className="text-gray-500">©2024 Talent Trove (open source)</p>
 
           <div className="flex space-x-4 mt-4 md:mt-0">
             <div className="flex space-x-4">
